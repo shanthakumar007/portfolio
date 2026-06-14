@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Shanthakumar S</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F6F0; /* Premium Cream Background */
+        }
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .bg-mesh-glow {
+            background-image: radial-gradient(circle at 20% 30%, rgba(13, 148, 136, 0.12), transparent 40%),
+                              radial-gradient(circle at 80% 70%, rgba(249, 115, 22, 0.06), transparent 50%);
+        }
+
+        /* 🔥 High-Tier Premium Animations */
+        @keyframes dynamicReveal {
+            0% {
+                opacity: 0;
+                transform: translateY(40px) scale(0.98);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes microFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+
+        /* Animation Utility Classes */
+        .animate-reveal {
+            animation: dynamicReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-float-node {
+            animation: microFloat 5s ease-in-out infinite;
+        }
+
+        /* Stagger Delays for Grid Entrance */
+        .stagger-1 { animation-delay: 0.1s; opacity: 0; animation-fill-mode: forwards; }
+        .stagger-2 { animation-delay: 0.2s; opacity: 0; animation-fill-mode: forwards; }
+        .stagger-3 { animation-delay: 0.3s; opacity: 0; animation-fill-mode: forwards; }
+        .stagger-4 { animation-delay: 0.4s; opacity: 0; animation-fill-mode: forwards; }
+
+        ul::-webkit-scrollbar {
+    display: none;
+}
+    </style>
+</head>
+<body class="min-h-screen bg-mesh-glow text-zinc-800 relative overflow-x-hidden">
+
+    <!-- 1. NAVIGATION HEADER BAR -->
+    <nav class="w-full fixed top-0 left-0 bg-white/80 backdrop-blur-md border-b border-zinc-200/50 px-6 md:px-12 py-5 flex items-center justify-between z-50 animate-reveal">
+        <div class="text-3xl font-extrabold tracking-tight text-teal-950 font-space">
+            SK<span class="text-orange-500">.</span>
+        </div>
+        <ul class="flex items-center space-x-4 md:space-x-8 text-sm font-semibold text-zinc-600 overflow-x-auto whitespace-nowrap">
+            <li><a href="slide 1.html" class="hover:text-teal-950 transition-colors">Home</a></li>
+            <li><a href="slide2.html" class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1">About</a></li>
+            <li><a href="slide3.html" class="hover:text-teal-950 transition-colors">Skills</a></li>
+            <li><a href="slide4.html" class="hover:text-teal-950 transition-colors">Projects</a></li>
+            <li><a href="slide5.html" class="hover:text-teal-950 transition-colors">Certifications</a></li>
+            <li><a href="slide6.html" class="hover:text-teal-950 transition-colors">Contact</a></li>
+        </ul>
+        <div>
+            <a href="shanthakumar .s.resume.pdf" class="px-5 py-2.5 bg-white border border-zinc-200 hover:border-zinc-400 rounded-xl font-semibold text-sm shadow-xs transition-all flex items-center gap-2 text-zinc-800">
+                📥 Get Resume
+            </a>
+        </div>
+            <div>
+                <a href="https://www.linkedin.com/in/shantha03062004" target="_blank" 
+           class="p-2.5 bg-blue-600/10 hover:bg-blue-600 border border-blue-500/20 text-blue-600 hover:text-white rounded-xl transition-all duration-200 text-xs font-bold flex items-center gap-1.5 shadow-xs">
+            <span>💼</span> LinkedIn
+        </a>
+            </div>
+            
+        
+        <div>
+            <a href="https://github.com/shanthakumar007" target="_blank" 
+           class="p-2.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-xl transition-all duration-200 text-white text-xs font-bold flex items-center gap-1.5 shadow-xs">
+            <span>💻</span> GitHub
+        </a>
+        </div>
+        
+    </nav>
+    
+
+    <!-- 2. MAIN ABOUT SECTION MODULE -->
+    <section id="about" class="w-full max-w-7xl mx-auto px-6 pt-32 pb-16 relative">
+        
+        <!-- Segment Label Counter Box -->
+        <div class="animate-reveal stagger-1 w-14 h-14 bg-teal-50 rounded-full border border-teal-200/60 flex items-center justify-center font-bold text-teal-700 text-sm mb-6">
+            02
+        </div>
+
+        <!-- Section Title Block -->
+        <div class="animate-reveal stagger-1 space-y-4">
+            <h2 class="text-5xl md:text-7xl font-extrabold font-space text-zinc-900 tracking-tighter uppercase">
+                Who Am <span class="text-orange-500">I?</span>
+            </h2>
+            <p class="text-zinc-500 text-base md:text-lg max-w-2xl font-medium leading-relaxed">
+                Passionate About Data, Technology, and Building Meaningful Digital Solutions.
+            </p>
+        </div>
+
+        <!-- MAIN THREE-COLUMN GRID SYSTEM -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mt-12 items-start">
+            
+            <!-- LEFT PANEL: Text Description (5/12 Grid) -->
+            <div class="animate-reveal stagger-2 lg:col-span-5 space-y-6 text-zinc-600 text-sm md:text-base leading-relaxed font-medium">
+                <p>
+                    I am <strong class="text-teal-950 font-bold">Shanthakumar S</strong>, a Computer Science Engineering student at 
+                    <span class="underline decoration-teal-600/40 font-semibold text-zinc-800">CARE College of Engineering, Trichy</span> with a strong passion for 
+                    <strong class="text-teal-900">Data Analytics, Web Development, and Frontend Development.</strong>
+                </p>
+                <p>
+                    I enjoy transforming raw data into meaningful insights through 
+                    <span class="bg-white px-2 py-0.5 rounded border border-zinc-200 font-semibold text-zinc-700">Python, SQL, Power BI, and Excel</span> while also creating 
+                    responsive and user-friendly web applications using <span class="bg-white px-2 py-0.5 rounded border border-zinc-200 font-semibold text-zinc-700">HTML, CSS, and JavaScript.</span>
+                </p>
+                <p class="text-zinc-500 border-l-4 border-orange-400 pl-4 italic">
+                    My goal is to combine Data Analytics and Web Development to create intelligent, data-driven, and user-friendly digital solutions that help businesses make smarter decisions and deliver better user experiences.
+                </p>
+            </div>
+
+            <!-- MIDDLE PANEL: Premium Education & Career Goal Cards (3/12 Grid) -->
+            <div class="animate-reveal stagger-3 lg:col-span-3 space-y-6">
+                
+                <!-- Education Box -->
+                <div class="p-6 bg-teal-950 text-white rounded-3xl shadow-xl space-y-3 transform hover:scale-[1.04] hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-2xl">🎓</span>
+                    <h3 class="font-space font-bold text-lg tracking-wide uppercase text-orange-400">Education</h3>
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-sm leading-snug">B.E Computer Science Engineering</h4>
+                        <p class="text-xs text-teal-200/80">CARE College of Engineering</p>
+                        <p class="text-xs font-bold tracking-wider text-teal-300 mt-1">2022 - 2026</p>
+                    </div>
+                </div>
+
+                <!-- Career Goal Box -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-3xl shadow-xs space-y-3 transform hover:scale-[1.04] hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-2xl">🎯</span>
+                    <h3 class="font-space font-bold text-lg tracking-wide uppercase text-teal-950">Career Goal</h3>
+                    <div class="space-y-1 text-zinc-600 text-xs">
+                        <h4 class="font-bold text-sm text-zinc-800">Data Analyst & Developer</h4>
+                        <p class="pt-1">📈 Turning Data into Insights</p>
+                        <p>💻 Building Modern Web Experiences</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL: Main Profile Pic Frame (4/12 Grid) -->
+            <div class="animate-reveal stagger-3 lg:col-span-4 relative flex justify-center">
+                <div class="w-full max-w-[340px] h-[420px] rounded-3xl overflow-hidden border-4 border-white shadow-2xl relative group">
+                    <div class="absolute inset-0 bg-teal-950/5 z-0"></div>
+                    <!-- 📸 UNNODA ABOUT PAGE PIC ATTACHMENT PATH LINK -->
+                    <img src="portfolio.png.jpeg" alt="Shanthakumar S Profile" class="w-full h-full object-cover relative z-10 transition-transform duration-500 group-hover:scale-105">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 3. UPGRADED VISUAL STATS GRID (With Micro Vector Images & Dynamic Floating Animation) -->
+        <div class="animate-reveal stagger-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 border-t border-zinc-200 pt-10">
+            
+            <!-- Stat 1: Major Projects Box -->
+            <div class="animate-float-node bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-48 relative overflow-hidden group">
+                <div class="z-10">
+                    <h3 class="text-4xl font-extrabold font-space text-orange-500">3+</h3>
+                    <p class="text-xs font-bold text-zinc-500 uppercase tracking-wider mt-1">Major Projects</p>
+                </div>
+                <!-- Mini Visual Vector Asset Placement -->
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=150&q=80" 
+                     alt="Projects Graphic" 
+                     class="absolute bottom-0 right-0 w-24 h-24 object-cover opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-300 pointer-events-none rounded-tl-full">
+            </div>
+
+            <!-- Stat 2: Technical Skills Box -->
+            <div class="animate-float-node [animation-delay:0.5s] bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-48 relative overflow-hidden group">
+                <div class="z-10">
+                    <h3 class="text-4xl font-extrabold font-space text-teal-950">8+</h3>
+                    <p class="text-xs font-bold text-zinc-500 uppercase tracking-wider mt-1">Technical Skills</p>
+                </div>
+                <!-- Mini Visual Vector Asset Placement -->
+                <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=150&q=80" 
+                     alt="Skills Graphic" 
+                     class="absolute bottom-0 right-0 w-24 h-24 object-cover opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-300 pointer-events-none rounded-tl-full">
+            </div>
+
+            <!-- Stat 3: Certificates Box -->
+            <div class="animate-float-node [animation-delay:1s] bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-48 relative overflow-hidden group">
+                <div class="z-10">
+                    <h3 class="text-4xl font-extrabold font-space text-orange-500">7+</h3>
+                    <p class="text-xs font-bold text-zinc-500 uppercase tracking-wider mt-1">Certificates</p>
+                </div>
+                <!-- Mini Visual Vector Asset Placement -->
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=150&q=80" 
+                     alt="Certificates Graphic" 
+                     class="absolute bottom-0 right-0 w-24 h-24 object-cover opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-300 pointer-events-none rounded-tl-full">
+            </div>
+
+            <!-- Stat 4: Graduate Year Box -->
+            <div class="animate-float-node [animation-delay:1.5s] bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-48 relative overflow-hidden group">
+                <div class="z-10">
+                    <h3 class="text-4xl font-extrabold font-space text-teal-950">2026</h3>
+                    <p class="text-xs font-bold text-zinc-500 uppercase tracking-wider mt-1">Graduate Year</p>
+                </div>
+                <!-- Mini Visual Vector Asset Placement -->
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=150&q=80" 
+                     alt="Graduation Graphic" 
+                     class="absolute bottom-0 right-0 w-24 h-24 object-cover opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-300 pointer-events-none rounded-tl-full">
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

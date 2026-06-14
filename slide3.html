@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Core Stack | Shanthakumar S</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712; /* Pitch Black Luxury Dark Background */
+        }
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Custom Tech Cyber Ambient Mesh Glow */
+        .bg-cyber-glow {
+            background-image: radial-gradient(circle at 10% 25%, rgba(13, 148, 136, 0.22), transparent 45%),
+                              radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.1), transparent 50%);
+        }
+
+        /* 🚀 Matrix Scale Reveal Animation */
+        @keyframes dynamicReveal {
+            0% {
+                opacity: 0;
+                transform: translateY(35px) scale(0.97);
+                filter: blur(5px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                filter: blur(0);
+            }
+        }
+
+        .animate-cyber-box {
+            animation: dynamicReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Interactive Custom Glowing Tech Nodes */
+        .cyber-node {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+        .cyber-node::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            box-shadow: 0 0 15px rgba(13, 148, 136, 0.3);
+            border: 1px solid rgba(13, 148, 136, 0.4);
+            pointer-events: none;
+        }
+        .cyber-node:hover {
+            transform: translateY(-4px) scale(1.02);
+            border-color: rgba(13, 148, 136, 0.4);
+            background-color: rgba(13, 148, 136, 0.04);
+        }
+        .cyber-node:hover::after {
+            opacity: 1;
+        }
+
+        /* Amber Variant Hover */
+        .cyber-node-amber::after {
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+            border: 1px solid rgba(249, 115, 22, 0.4);
+        }
+        .cyber-node-amber:hover {
+            border-color: rgba(249, 115, 22, 0.4);
+            background-color: rgba(249, 115, 22, 0.03);
+        }
+
+        /* Stagger Delays */
+        .delay-100 { animation-delay: 0.1s; opacity: 0; animation-fill-mode: forwards; }
+        .delay-200 { animation-delay: 0.2s; opacity: 0; animation-fill-mode: forwards; }
+        .delay-300 { animation-delay: 0.3s; opacity: 0; animation-fill-mode: forwards; }
+
+        ul::-webkit-scrollbar {
+    display: none;
+}
+    </style>
+</head>
+<body class="min-h-screen bg-cyber-glow text-zinc-300 relative overflow-x-hidden">
+
+    <!-- NAVIGATION HEADER BAR MODULE -->
+    <nav class="w-full fixed top-0 left-0 bg-zinc-950/75 backdrop-blur-md border-b border-zinc-850/60 px-6 md:px-12 py-5 flex items-center justify-between z-50">
+        <div class="text-3xl font-extrabold tracking-tight text-teal-400 font-space select-none">
+            SK<span class="text-orange-500">.</span>
+        </div>
+        
+        <!-- Center Route Paths -->
+        <ul class="flex items-center space-x-4 md:space-x-8 text-sm font-semibold text-zinc-400 overflow-x-auto whitespace-nowrap">
+            <li><a href="slide 1.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="slide2.html" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="slide3.html" class="text-orange-400 font-bold border-b-2 border-orange-500 pb-1">Skills</a></li>
+            <li><a href="slide4.html" class="hover:text-white transition-colors">Projects</a></li>
+            <li><a href="slide5.html" class="hover:text-white transition-colors">Certifications</a></li>
+            <li><a href="slide6.html" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+        
+        <!-- Right Action Platform HUD (Clean Row Layout) -->
+        <div class="flex items-center gap-3">
+            <a href="https://github.com/shanthakumar007" target="_blank" 
+               class="p-2.5 bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 rounded-xl transition-all text-white text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <span>💻</span> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/shantha03062004" target="_blank" 
+               class="p-2.5 bg-blue-600/20 hover:bg-blue-600 border border-blue-500/30 text-blue-400 hover:text-white rounded-xl transition-all text-xs font-bold flex items-center gap-1.5 shadow-md">
+                <span>💼</span> LinkedIn
+            </a>
+            <a href="shanthakumar .s.resume.pdf" target="_blank" 
+               class="hidden sm:inline-flex px-4 py-2.5 bg-transparent border border-teal-500 hover:bg-teal-500 hover:text-white text-teal-400 rounded-xl font-bold text-xs shadow-xs transition-all">
+                Get Resume
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN SKILLS STUDIO SECTION CONTAINER -->
+    <section id="skills" class="w-full max-w-7xl mx-auto px-6 pt-32 pb-16 relative">
+        
+        <!-- Segment Label Counter Box -->
+        <div class="animate-cyber-box w-14 h-14 bg-zinc-900 rounded-full border border-zinc-800/80 flex items-center justify-center font-bold text-teal-400 text-sm mb-6">
+            03
+        </div>
+
+        <!-- Section Headers Title -->
+        <div class="animate-cyber-box space-y-4">
+            <h2 class="text-5xl md:text-7xl font-extrabold font-space text-white tracking-tighter uppercase leading-none">
+                Technical <span class="text-orange-500">Stack</span>
+            </h2>
+            <p class="text-zinc-400 text-base md:text-lg max-w-2xl font-medium leading-relaxed">
+                Here are the technical skills and core frameworks I’ve mastered across data analysis pipelines, programming architectures, and responsive frontend design layouts.
+            </p>
+        </div>
+
+        <!-- CYBER GLASS ENGINE GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+            
+            <!-- Category Box 1: Core Systems & Web Architectures -->
+            <div class="animate-cyber-box delay-100 bg-zinc-900/40 backdrop-blur-md border border-zinc-800/80 rounded-3xl p-6 md:p-8 flex flex-col justify-between group relative overflow-hidden">
+                <div class="space-y-6">
+                    <div class="flex items-center justify-between border-b border-zinc-800/60 pb-4">
+                        <div class="flex items-center gap-2.5">
+                            <span class="p-2.5 bg-teal-500/10 rounded-xl text-lg text-teal-400 font-bold select-none">💻</span>
+                            <h3 class="font-space font-bold text-xl text-white">Frontend Web</h3>
+                        </div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-teal-500/80">Stack 01</span>
+                    </div>
+
+                    <!-- Clean Modular Technology Hardware Chips -->
+                    <div class="space-y-3.5">
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">JavaScript</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">ES6+ Programming</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Interactive Logic</span>
+                        </div>
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">HTML5 Semantic</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">SEO & Structuring</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Structures</span>
+                        </div>
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">CSS3 Layouts</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Flexbox & Grid Systems</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Styling Grid</span>
+                        </div>
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">Tailwind CSS</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Rapid Responsive Design</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Fluid UI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-12 -right-12 w-28 h-28 bg-teal-500/5 rounded-full group-hover:scale-150 transition-transform duration-500 pointer-events-none"></div>
+            </div>
+
+            <!-- Category Box 2: Systems, Database Core & Environments -->
+            <div class="animate-cyber-box delay-200 bg-zinc-900/40 backdrop-blur-md border border-zinc-800/80 rounded-3xl p-6 md:p-8 flex flex-col justify-between group relative overflow-hidden">
+                <div class="space-y-6">
+                    <div class="flex items-center justify-between border-b border-zinc-800/60 pb-4">
+                        <div class="flex items-center gap-2.5">
+                            <span class="p-2.5 bg-teal-500/10 rounded-xl text-lg text-teal-400 font-bold select-none">⚙️</span>
+                            <h3 class="font-space font-bold text-xl text-white">Backend & OS</h3>
+                        </div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-teal-500/80">Stack 02</span>
+                    </div>
+
+                    <!-- Clean Modular Technology Hardware Chips -->
+                    <div class="space-y-3.5">
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">SQL Databases</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Structured Queries</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Data Models</span>
+                        </div>
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">Python Core</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Algorithmic Scripting</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Automation</span>
+                        </div>
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">Linux OS</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Terminal & Shell Scripting</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Infrastructure</span>
+                        </div>
+                        <div class="cyber-node p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">VS Code Environment</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Production Debugging</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-teal-500/10 text-teal-400 font-bold rounded-md tracking-wider uppercase">Source IDE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-12 -right-12 w-28 h-28 bg-teal-500/5 rounded-full group-hover:scale-150 transition-transform duration-500 pointer-events-none"></div>
+            </div>
+
+            <!-- Category Box 3: Data Analytics & Visualizations (Highlighted Card) -->
+            <div class="animate-cyber-box delay-300 bg-zinc-900/40 backdrop-blur-md border border-orange-500/30 rounded-3xl p-6 md:p-8 flex flex-col justify-between group relative overflow-hidden shadow-lg shadow-orange-500/5">
+                <div class="space-y-6">
+                    <div class="flex items-center justify-between border-b border-zinc-800/60 pb-4">
+                        <div class="flex items-center gap-2.5">
+                            <span class="p-2.5 bg-orange-500/10 rounded-xl text-lg text-orange-400 font-bold select-none">📊</span>
+                            <h3 class="font-space font-bold text-xl text-white">Data Analytics</h3>
+                        </div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-orange-500">Core Domain</span>
+                    </div>
+
+                    <!-- Clean Modular Technology Hardware Chips (Amber Themes) -->
+                    <div class="space-y-3.5">
+                        <div class="cyber-node cyber-node-amber p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">Power BI Dashboards</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">DAX & Interactive Visuals</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-orange-500/15 text-orange-400 font-bold rounded-md tracking-wider uppercase">BI Reporting</span>
+                        </div>
+                        <div class="cyber-node cyber-node-amber p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">Pandas & NumPy</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Data Wrangling Pipelines</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-orange-500/15 text-orange-400 font-bold rounded-md tracking-wider uppercase">Data Science</span>
+                        </div>
+                        <div class="cyber-node cyber-node-amber p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">Advanced Excel</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Formulas & Pivot Engines</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-orange-500/15 text-orange-400 font-bold rounded-md tracking-wider uppercase">Calculation</span>
+                        </div>
+                        <div class="cyber-node cyber-node-amber p-4 bg-zinc-950/60 border border-zinc-850/60 rounded-2xl flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-white">Matplotlib & Graphics</span>
+                                <span class="text-[10px] text-zinc-500 font-medium">Exploratory Visual Plots</span>
+                            </div>
+                            <span class="text-[9px] px-2.5 py-1 bg-orange-500/15 text-orange-400 font-bold rounded-md tracking-wider uppercase">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-12 -right-12 w-28 h-28 bg-orange-500/5 rounded-full group-hover:scale-150 transition-transform duration-500 pointer-events-none"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

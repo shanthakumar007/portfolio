@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Portfolio Studio | Shanthakumar S</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F6F0; /* Premium Cream Background Consistency */
+        }
+        .font-space {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .bg-mesh-glow {
+            background-image: radial-gradient(circle at 10% 20%, rgba(13, 148, 136, 0.15), transparent 40%),
+                              radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.08), transparent 50%);
+        }
+
+        /* 🚀 High-Tier Slick Entrance Animations */
+        @keyframes studioReveal {
+            0% {
+                opacity: 0;
+                transform: translateY(40px) scale(0.99);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .animate-studio-reveal {
+            animation: studioReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        ul::-webkit-scrollbar {
+    display: none;
+}
+    </style>
+</head>
+<body class="min-h-screen bg-mesh-glow text-zinc-800 relative overflow-x-hidden">
+
+    <!-- NAVIGATION HEADER BAR MODULE -->
+    <nav class="w-full fixed top-0 left-0 bg-white/80 backdrop-blur-md border-b border-zinc-200/50 px-6 md:px-12 py-5 flex items-center justify-between z-50">
+        <div class="text-3xl font-extrabold tracking-tight text-teal-950 font-space">
+            SK<span class="text-orange-500">.</span>
+        </div>
+        <ul class="flex items-center space-x-4 md:space-x-8 text-sm font-semibold text-zinc-400 overflow-x-auto whitespace-nowrap">
+            <li><a href="slide 1.html" class="hover:text-teal-950 transition-colors">Home</a></li>
+            <li><a href="slide2.html" class="hover:text-teal-950 transition-colors">About</a></li>
+            <li><a href="slide3.html" class="hover:text-teal-950 transition-colors">Skills</a></li>
+            <li><a href="slide4.html" class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1">Projects</a></li>
+            <li><a href="slide5.html" class="hover:text-teal-950 transition-colors">Certifications</a></li>
+            <li><a href="slide6.html" class="hover:text-teal-950 transition-colors">Contact</a></li>
+        </ul>
+        
+        <div>
+            <a href="shanthakumar .s.resume.pdf" class="px-5 py-2.5 bg-white border border-zinc-200 hover:border-zinc-400 rounded-xl font-semibold text-sm shadow-xs transition-all flex items-center gap-2 text-zinc-800">
+                📥 Get Resume
+            </a>
+        </div>
+            <div>
+                <a href="https://www.linkedin.com/in/shantha03062004" target="_blank" 
+           class="p-2.5 bg-blue-600/10 hover:bg-blue-600 border border-blue-500/20 text-blue-600 hover:text-white rounded-xl transition-all duration-200 text-xs font-bold flex items-center gap-1.5 shadow-xs">
+            <span>💼</span> LinkedIn
+        </a>
+            </div>
+            
+        
+        <div>
+            <a href="https://github.com/shanthakumar007" target="_blank" 
+           class="p-2.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-xl transition-all duration-200 text-white text-xs font-bold flex items-center gap-1.5 shadow-xs">
+            <span>💻</span> GitHub
+        </a>
+        </div>
+    </nav>
+    
+
+    <!-- CORE INTERACTIVE DUAL SPLIT PLATFORM -->
+    <section id="projects" class="w-full max-w-7xl mx-auto px-6 pt-32 pb-16 relative min-h-screen">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative">
+            
+            <!-- LEFT CONTROL PANEL: Sticky Brand Description Box (4/12 Grid) -->
+            <div class="lg:col-span-4 lg:sticky lg:top-36 space-y-6 animate-studio-reveal">
+                
+                <div class="w-14 h-14 bg-teal-50 rounded-full border border-teal-200/60 flex items-center justify-center font-bold text-teal-700 text-sm">
+                    04
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-5xl lg:text-6xl font-extrabold font-space text-zinc-900 tracking-tighter uppercase leading-none">
+                        Featured <br><span class="text-orange-500">Work</span>
+                    </h2>
+                    <p class="text-zinc-500 text-sm md:text-base font-medium leading-relaxed">
+                        "Here is a breakdown of the projects I’ve built, applying data analytics pipelines and neural networks to solve practical system problems."
+                    </p>
+                </div>
+
+                <!-- Live Track Stats Badge -->
+                <div class="p-4 bg-white border border-zinc-200/80 rounded-2xl flex items-center justify-between shadow-xs">
+                    <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Project Track Engine</span>
+                    <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-700 text-xs font-bold rounded-lg border border-emerald-500/20">Production Active</span>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTROL PANEL: Heavy Stack Continuous Scrolling Showcase (8/12 Grid) -->
+            <div class="lg:col-span-8 space-y-8 animate-studio-reveal [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
+                
+                <!-- Project Card Variant 1: Deep Learning Engine (ATM Fraud Target) -->
+                <div class="w-full bg-teal-950 text-white rounded-3xl p-6 md:p-10 shadow-xl border border-teal-900 relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    
+                    <!-- Inner Grid Layout Split -->
+                    <div class="relative z-10 space-y-6">
+                        <div class="flex items-center justify-between border-b border-teal-900 pb-4">
+                            <div class="flex items-center gap-2">
+                                <span class="p-2 bg-teal-900 rounded-lg text-lg text-orange-400">🧠</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-teal-300">Deep Learning Track</span>
+                            </div>
+                            <span class="text-xs font-medium text-teal-400/80 uppercase tracking-widest font-space">System Model 01</span>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-2xl md:text-3xl font-bold font-space text-white tracking-tight group-hover:text-orange-400 transition-colors">
+                                Intelligent ATM Fraud Detection System
+                            </h3>
+                            <p class="text-xs md:text-sm text-teal-100/70 leading-relaxed font-medium pt-1">
+                                Developed an intelligent ATM security system using CNN-LSTM deep learning to detect fraudulent transactions based on user behavior patterns. Analyzed transaction data such as withdrawal amount, location, and transaction history to improve real-time fraud detection and banking security.
+                            </p>
+                        </div>
+
+                        <!-- Core Architectural Tag Pills -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 bg-teal-900 border border-teal-800 rounded-xl text-xs font-bold text-teal-100">Python Programming</span>
+                            <span class="px-3 py-1.5 bg-teal-900 border border-teal-800 rounded-xl text-xs font-bold text-teal-100">CNN & LSTM Networks</span>
+                            <span class="px-3 py-1.5 bg-teal-900 border border-teal-800 rounded-xl text-xs font-bold text-teal-100">TensorFlow Core</span>
+                            <span class="px-3 py-1.5 bg-teal-900 border border-teal-800 rounded-xl text-xs font-bold text-teal-100">SQL Database</span>
+                        </div>
+
+                        <!-- Action Execution Command Trigger -->
+                        <div class="pt-6 border-t border-teal-900/60 flex flex-sm-row items-center justify-between gap-4">
+                            <a href="https://github.com/shanthakumar007" target="_blank" 
+                               class="inline-flex items-center gap-2 text-sm font-bold text-orange-400 hover:text-orange-300 transition-colors group/link">
+                                Explore Core Code Repository 
+                                <span class="group-hover/link:translate-x-1 transition-transform inline-block">↗</span>
+                            </a>
+                            <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Ambient Graphic Overlay Background Decorator -->
+                    <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-teal-900/40 rounded-full group-hover:scale-150 transition-transform duration-700 pointer-events-none z-0"></div>
+                </div>
+
+
+                <!-- Project Card Variant 2: Enterprise Intelligence (CRM Dashboard Target) -->
+                <div class="w-full bg-white border border-zinc-200 rounded-3xl p-6 md:p-10 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
+                    
+                    <!-- Inner Grid Layout Split -->
+                    <div class="relative z-10 space-y-6">
+                        <div class="flex items-center justify-between border-b border-zinc-100 pb-4">
+                            <div class="flex items-center gap-2">
+                                <span class="p-2 bg-orange-50 rounded-lg text-lg text-orange-500">📊</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-zinc-400">Data Engineering & BI</span>
+                            </div>
+                            <span class="text-xs font-medium text-zinc-400 uppercase tracking-widest font-space">System Model 02</span>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-2xl md:text-3xl font-bold font-space text-teal-950 tracking-tight group-hover:text-teal-700 transition-colors">
+                                Customer Relationship Data Cleaning & Dashboard Pipeline
+                            </h3>
+                            <p class="text-xs md:text-sm text-zinc-500 leading-relaxed font-medium pt-1">
+                                Cleaned and analyzed customer and sales data using Python, SQL, Power BI, and Excel by handling missing values, duplicates. Developed interactive dashboards and KPIs to identify sales trends, customer behavior, and business insights for decision-making.
+                            </p>
+                        </div>
+
+                        <!-- Core Architectural Tag Pills -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1.5 bg-zinc-50 border border-zinc-200 rounded-xl text-xs font-bold text-zinc-700">Python Core</span>
+                            <span class="px-3 py-1.5 bg-zinc-50 border border-zinc-200 rounded-xl text-xs font-bold text-zinc-700">SQL Anomaly Scripts</span>
+                            <span class="px-3 py-1.5 bg-zinc-50 border border-zinc-200 rounded-xl text-xs font-bold text-zinc-700">Power BI KPIs</span>
+                            <span class="px-3 py-1.5 bg-zinc-50 border border-zinc-200 rounded-xl text-xs font-bold text-zinc-700">Pandas & NumPy</span>
+                            <span class="px-3 py-1.5 bg-zinc-50 border border-zinc-200 rounded-xl text-xs font-bold text-zinc-700">MS Excel</span>
+                        </div>
+
+                        <!-- Action Execution Command Trigger -->
+                        <div class="pt-6 border-t border-zinc-100 flex flex-sm-row items-center justify-between gap-4">
+                            <a href="https://github.com/shanthakumar007" target="_blank" 
+                               class="inline-flex items-center gap-2 text-sm font-bold text-teal-950 hover:text-teal-700 transition-colors group/link">
+                                Analyze Active Intelligence Dashboard 
+                                <span class="group-hover/link:translate-x-1 transition-transform inline-block">↗</span>
+                            </a>
+                            <div class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Ambient Graphic Overlay Background Decorator -->
+                    <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-orange-500/5 rounded-full group-hover:scale-150 transition-transform duration-700 pointer-events-none z-0"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
